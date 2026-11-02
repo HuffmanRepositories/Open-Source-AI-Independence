@@ -1,0 +1,258 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/HuffmanRepositories/Open-Source-AI-Independence/blob/main/schemas/agent-handshake.schema.json",
+  "title": "Huffman Agent Handshake",
+  "description": "A portable record of declared agent task scope and handoff status. This schema does not authenticate actors or grant permissions.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "phase",
+    "actor",
+    "target",
+    "task",
+    "access",
+    "authorization",
+    "constraints",
+    "validation",
+    "stop_conditions"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "0.1"
+    },
+    "phase": {
+      "enum": [
+        "HELLO",
+        "CAPABILITIES",
+        "SCOPE",
+        "ACK",
+        "WORK",
+        "REPORT",
+        "CLOSE"
+      ]
+    },
+    "actor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "role",
+        "identity_claim"
+      ],
+      "properties": {
+        "role": {
+          "type": "string",
+          "minLength": 1
+        },
+        "identity_claim": {
+          "enum": [
+            "verified_by_platform",
+            "unverified",
+            "human_owner",
+            "authorized_maintainer"
+          ]
+        }
+      }
+    },
+    "target": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "repository",
+        "ref",
+        "paths"
+      ],
+      "properties": {
+        "repository": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$"
+        },
+        "ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "paths": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        }
+      }
+    },
+    "task": {
+      "type": "string",
+      "minLength": 1
+    },
+    "access": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "requested",
+        "confirmed",
+        "unavailable"
+      ],
+      "properties": {
+        "requested": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "read",
+              "propose_changes",
+              "write",
+              "run_tests",
+              "network_access",
+              "open_pull_request",
+              "merge",
+              "release",
+              "change_settings"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "confirmed": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "read",
+              "propose_changes",
+              "write",
+              "run_tests",
+              "network_access",
+              "open_pull_request",
+              "merge",
+              "release",
+              "change_settings"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "unavailable": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "read",
+              "propose_changes",
+              "write",
+              "run_tests",
+              "network_access",
+              "open_pull_request",
+              "merge",
+              "release",
+              "change_settings"
+            ]
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "authorization": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "required",
+        "acknowledgement"
+      ],
+      "properties": {
+        "required": {
+          "type": "boolean"
+        },
+        "acknowledged_by": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "acknowledgement": {
+          "enum": [
+            "pending",
+            "approved",
+            "denied",
+            "not_required"
+          ]
+        }
+      }
+    },
+    "constraints": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "validation": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "stop_conditions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "report": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "changed_files": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "commit_shas": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[0-9a-fA-F]{7,64}$"
+          }
+        },
+        "checks": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "name",
+              "result"
+            ],
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "result": {
+                "enum": [
+                  "passed",
+                  "failed",
+                  "skipped",
+                  "blocked",
+                  "in_progress"
+                ]
+              },
+              "details": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "limitations": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "next_steps": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
