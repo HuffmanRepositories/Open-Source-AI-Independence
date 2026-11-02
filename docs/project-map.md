@@ -25,7 +25,7 @@ This map distinguishes repositories that exist from ideas that have not passed a
 ## Portfolio automation and security baseline
 
 - **Gitleaks full-history scan:** configured in all 13 account repositories. It checks out all history, downloads Gitleaks CLI v8.30.1, verifies the release SHA-256, and runs a redacted scan over all reachable refs/commits. The latest observed full-history Gitleaks runs completed successfully across all 13 repositories and reported no leaks.
-- **CodeQL Python analysis:** configured for eight repositories containing Python validator code: seven public fixture repositories and the private Blueprint. The latest observed runs for the seven public repositories completed successfully; the Blueprint run was still in progress at the time of this update. Review alerts in each repository's GitHub Security tab.
+- **CodeQL Python analysis:** configured for the seven public repositories containing Python validator code. The latest observed runs completed successfully. The private Blueprint's attempted workflow could not upload results because GitHub code scanning is not enabled there; that workflow was removed pending owner-side settings review. Review alerts in each repository's GitHub Security tab.
 - **Dependabot:** weekly GitHub Actions dependency update checks are configured in all 13 repositories.
 - **Workflow supply-chain hygiene:** GitHub Actions are pinned to immutable commit SHAs and checkout uses `persist-credentials: false` with read-only repository permissions where applicable.
 
