@@ -18,8 +18,9 @@ The latest observed full-history Gitleaks runs completed successfully across all
 
 ## CodeQL
 
-SHA-pinned CodeQL Python analysis is configured for seven public repositories containing Python validators:
+SHA-pinned CodeQL Python analysis is configured for eight public repositories containing Python validators:
 
+- Open Agent Compatibility (OAC)
 - OAC Fixtures
 - OARMI
 - P10 Memory Portability
@@ -48,7 +49,7 @@ The public rulesets endpoint returned no rulesets for the public repositories. C
 
 ## Recommendations
 
-1. Review CodeQL findings from GitHub Security → Code scanning for all seven public Python repos; enable code scanning for the private Blueprint only if its plan/settings support it.
+1. Review CodeQL findings from GitHub Security → Code scanning for all eight public Python repos; enable code scanning for the private Blueprint only if its plan/settings support it.
 2. Review GitHub native Dependabot alerts and secret scanning/push protection in repo Settings → Security.
 3. Require PR review and CI checks on each main branch after adding an independent maintainer.
 4. Keep full-history secret scans enabled; rotate any real credential immediately if a finding appears.
