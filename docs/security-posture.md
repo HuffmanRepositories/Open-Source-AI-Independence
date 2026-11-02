@@ -30,7 +30,7 @@ SHA-pinned CodeQL Python analysis is configured for seven public repositories co
 
 The latest observed CodeQL runs for these seven public repositories completed successfully. Successful analysis does not by itself assert zero alerts. **A successful upload is not the same as “zero alerts”; review the Security → Code scanning view for each repository.**
 
-The private Blueprint contains Python test code, but its attempted CodeQL workflow could not upload results because GitHub code scanning is not enabled for that repository. I removed that workflow rather than leave a recurring failing check. Enabling CodeQL for the private repository remains an owner-side settings decision. The base OAC, mission hub, account-profile README, private Test Lab, and public Guide are primarily documentation/coordination rather than Python application code and are not included in the CodeQL Python matrix.
+Private repositories are not included in the public CodeQL coverage statement; GitHub code-scanning availability and settings must be checked separately by an authorized owner before adding CodeQL. The base OAC, mission hub, account-profile README, private Test Lab, and public Guide are primarily documentation/coordination rather than Python application code and are not included in the CodeQL Python matrix.
 
 ## Dependency update automation
 
@@ -42,7 +42,7 @@ The available GitHub connector does not expose the needed security-alert and rep
 - GitHub Dependabot security-alert status and alert inventory;
 - GitHub native secret scanning and push protection status;
 - classic branch protection and required status-check settings;
-- private Blueprint ruleset / private repository security settings.
+- private repository ruleset / security settings.
 
 The public rulesets endpoint returned no rulesets for the public repositories. Classic branch protection reads were denied by the integration, so that does **not** prove whether classic protections are set.
 
