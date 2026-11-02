@@ -30,7 +30,7 @@ SHA-pinned CodeQL Python analysis is configured for seven public repositories co
 
 The latest observed CodeQL runs for these seven public repositories completed successfully. Successful analysis does not by itself assert zero alerts. **A successful upload is not the same as “zero alerts”; review the Security → Code scanning view for each repository.**
 
-Private repositories are not included in the public CodeQL coverage statement; GitHub code-scanning availability and settings must be checked separately by an authorized owner before adding CodeQL. The base OAC, mission hub, account-profile README, private Test Lab, and public Guide are primarily documentation/coordination rather than Python application code and are not included in the CodeQL Python matrix.
+Private repositories are not included in the public CodeQL coverage statement; GitHub code-scanning availability and settings must be checked separately by an authorized owner before adding CodeQL. The base OAC, mission hub, account-profile README, and public Guide are primarily documentation/coordination rather than Python application code and are not included in the CodeQL Python matrix.
 
 ## Dependency update automation
 
