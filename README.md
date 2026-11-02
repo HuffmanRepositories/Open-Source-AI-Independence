@@ -1,5 +1,8 @@
 # Open Source AI Independence
 
+[Start here](START-HERE.md) · [AI agent guidance](AGENTS.md)
+
+
 > An open invitation to build independent, decentralized, transparent, interoperable, and human-centered AI infrastructure—together.
 
 **We want AI infrastructure to remain something people can understand, inspect, shape, fork, and control—not something they must surrender their autonomy to use.**
