@@ -18,6 +18,8 @@ This map distinguishes repositories that exist from ideas that have not passed a
 
 **Maturity note:** the fixture repositories are synthetic draft research artifacts. Passing CI verifies only their current structural checks and tests. No stable release, independent semantic review, or production conformance claim is implied.
 
+| [HuffmanRepositories profile README](https://github.com/HuffmanRepositories/HuffmanRepositories) | Account profile / discovery | Account-level portfolio links and broader research identity | Not a technical implementation |
+
 ## Deferred / proposed work
 
 | Workstream | Purpose | Gate before creating another repository |
