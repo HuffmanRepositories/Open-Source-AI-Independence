@@ -19,13 +19,14 @@ This map distinguishes repositories that exist from ideas that have not passed a
 **Maturity note:** the fixture repositories are synthetic draft research artifacts. Passing CI verifies only their current structural checks and tests. No stable release, independent semantic review, or production conformance claim is implied.
 
 | [HuffmanRepositories profile README](https://github.com/HuffmanRepositories/HuffmanRepositories) | Account profile / discovery | Account-level portfolio links and broader research identity | Not a technical implementation |
+| [Huffman Ecosystem Guide](https://github.com/HuffmanRepositories/Huffman-Ecosystem-Guide) | Public onboarding guide | Beginner orientation, safe-use guidance, project map, and AI-agent onboarding | Not a substitute for each project's canonical documentation |
 
 
 ## Portfolio automation and security baseline
 
-- **Gitleaks full-history scan:** configured in all 11 account repositories. It checks out all history, downloads Gitleaks CLI v8.30.1, verifies the release SHA-256, and runs a redacted scan over all reachable refs/commits. The first completed full-history pass reported no leaks.
-- **CodeQL Python analysis:** configured for the seven public repositories containing Python validators. Latest observed CodeQL workflows completed successfully and uploaded analysis results; review any alerts in each repository's GitHub Security tab.
-- **Dependabot:** weekly GitHub Actions dependency update checks are configured in all 11 repositories.
+- **Gitleaks full-history scan:** configured in all 13 account repositories. It checks out all history, downloads Gitleaks CLI v8.30.1, verifies the release SHA-256, and runs a redacted scan over all reachable refs/commits. The first completed full-history pass reported no leaks.
+- **CodeQL Python analysis:** configured for eight repositories containing Python validator code: seven public fixture repositories and the private Blueprint. The latest observed runs for the seven public repositories completed successfully; the Blueprint run was still in progress at the time of this update. Review alerts in each repository's GitHub Security tab.
+- **Dependabot:** weekly GitHub Actions dependency update checks are configured in all 13 repositories.
 - **Workflow supply-chain hygiene:** GitHub Actions are pinned to immutable commit SHAs and checkout uses `persist-credentials: false` with read-only repository permissions where applicable.
 
 **Security scope:** these checks cover secret patterns in reachable Git history and CodeQL-supported Python source. They do not replace runtime testing, dependency-alert review, branch-protection verification, or an independent security audit. GitHub-native Dependabot alert, push-protection, secret-scanning, and branch-protection settings still require owner-side verification. See [Security posture](security-posture.md).
