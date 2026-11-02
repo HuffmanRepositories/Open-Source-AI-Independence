@@ -1,0 +1,26 @@
+# Open Source AI Independence — Project overview
+
+## Identity
+Repository: https://github.com/HuffmanRepositories/Open-Source-AI-Independence
+Owner: HuffmanRepositories
+Status: Initial public foundation / coordination repository
+License: MIT unless a file says otherwise.
+
+## Mission
+Encourage an ecosystem of independent, decentralized where appropriate, transparent, interoperable, reliable, and human-centered AI infrastructure. Connect existing open projects, identify practical gaps, and develop shared standards, integration patterns, documentation, and tools.
+
+## Principles
+Provider choice; open interfaces; transparency; evidence and uncertainty; human oversight; privacy and security; realistic decentralization; community participation; attribution; maintainability.
+
+## Boundaries
+This repository does not aim to replace all AI frameworks, OSINT platforms, security tools, or orchestration runtimes. Existing projects should be credited and integrated when possible. It currently provides mission, coordination, and planning—not production software.
+
+## Related accounts
+HuffmanRepositories: https://github.com/HuffmanRepositories
+HuffmanMainNode: https://github.com/HuffmanMainNode
+PCakes303: https://github.com/PCakes303
+Ryzean84: https://github.com/Ryzean84
+roberthuffman: https://github.com/roberthuffman
+
+## Contributing
+Issues, discussions, pull requests, research, documentation, testing, design, integrations, and critique are welcome. AI-generated contributions must be reviewed and verified by submitters.
