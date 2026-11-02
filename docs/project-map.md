@@ -1,19 +1,33 @@
 # Project Map
 
-This is an exploratory map. Mentioning a planned project does not mean it exists.
+This map distinguishes repositories that exist from ideas that have not passed a creation gate. Repository presence does not imply stable status, independent review, or production readiness.
 
-| Workstream | Purpose | Boundary |
+## Current portfolio
+
+| Project | Status | Purpose | Boundary |
+|---|---|---|---|
+| [Open Source AI Independence](https://github.com/HuffmanRepositories/Open-Source-AI-Independence) | Mission hub | Coordination, mission, roadmap, community onboarding | Not a software product or guarantee of maturity |
+| [Open Agent Compatibility (OAC)](https://github.com/HuffmanRepositories/Open-Agent-Compatibility) | Research | Version-pinned mapping and compatibility analysis across agent protocols | No universal protocol, runtime, or certification |
+| [OAC Fixtures](https://github.com/HuffmanRepositories/Open-Agent-Compatibility-Fixtures) | Draft fixture corpus | Reproducible mapping/interoperability examples | Fixture validation is not protocol conformance |
+| [Open Agent Run Metrics Interop (OARMI)](https://github.com/HuffmanRepositories/Open-Agent-Run-Metrics-Interop) | Draft fixture corpus | Usage/accounting interchange questions and test vectors | Not billing, pricing, budget enforcement, or a standard |
+| [Agent Memory Portability Tests](https://github.com/HuffmanRepositories/Agent-Memory-Portability-Tests) | Draft fixture corpus | Export/import, migration, provenance, retention, deletion, loss cases | Not a memory protocol, database, SDK, or certification |
+| [Agent Evaluation Oracle Integrity Fixtures](https://github.com/HuffmanRepositories/Agent-Evaluation-Oracle-Integrity-Fixtures) | Draft fixture corpus | Integrity risks and toy expected observations for evaluation systems | Not a benchmark, exploit kit, or security certification |
+| [Agent Tool Retry & Idempotency Fixtures](https://github.com/HuffmanRepositories/Agent-Tool-Retry-Idempotency-Fixtures) | Draft fixture corpus | Side-effect retries, idempotency, ambiguous outcomes, reconciliation | Not a retry engine or exactly-once guarantee |
+| [Agent Delegation Scope Boundary Fixtures](https://github.com/HuffmanRepositories/Agent-Delegation-Scope-Boundary-Fixtures) | Draft fixture corpus | Parent/child authority constraints, nested grants, revocation, scope | Not an auth protocol, policy engine, or runtime |
+| [Agent Delegated Budget Enforcement Fixtures](https://github.com/HuffmanRepositories/Agent-Delegated-Budget-Enforcement-Fixtures) | Draft fixture corpus | Hierarchical reservation, allocation, settlement, and budget edge cases | Not a budget manager, billing service, or standard |
+
+**Maturity note:** the fixture repositories are synthetic draft research artifacts. Passing CI verifies only their current structural checks and tests. No stable release, independent semantic review, or production conformance claim is implied.
+
+## Deferred / proposed work
+
+| Workstream | Purpose | Gate before creating another repository |
 |---|---|---|
-| Open foundation/index | Discover and connect projects and standards | Complement registries already in the ecosystem |
-| AI discovery metadata | Help humans and AI tools navigate project information | No ranking/recommendation guarantee |
-| Interoperability | Recipes and conformance across protocols | Not another general agent runtime |
-| Human/system coordination | Handoff, approvals, communication, auditability | Not a swarm engine |
-| Decentralized control | Local-first, federated, and P2P patterns | Document tradeoffs |
-| Resource economics | Budgets, quotas, provider portability, stop conditions | Avoid lock-in |
-| Evidence reliability | Claim status and provenance | Integrate with OSINT/evidence tools |
-| System verification | Compatibility tests and safe differential analysis | Do not replace established reverse-engineering tools |
-| Reliability benchmark | Reproducible evaluation of failure modes | Publish methodology and limitations |
+| Open infrastructure index | Discover/connect projects and standards | Demonstrate a differentiated discovery problem; avoid registry duplication |
+| AI discovery metadata | Help humans and AI tools navigate project information | Coordinate with existing manifests/registries |
+| Human/system coordination | Handoff, approvals, communication, auditability | Identify a concrete unmet workflow |
+| Decentralized control | Local-first, federated, and P2P patterns | Specify use case and tradeoffs |
+| Evidence reliability | Claim status and provenance | Avoid duplicating existing OSINT/evidence tools |
+| System verification | Compatibility tests and safe differential analysis | Define a narrow verification target |
+| Reliability benchmark | Reproducible evaluation of failure modes | Identify a unique metric and methodology |
 
-Potential future repos: open-infrastructure-index, ai-discovery-manifest, open-agent-interoperability, human-system-coordination, decentralized-control-patterns, agent-resource-economics, evidence-and-claim-reliability, open-system-verification, open-agent-reliability-bench.
-
-These remain proposals. Create repositories only after validating need, scope, maintainer availability, and a testable first milestone.
+Do not create a repository simply to increase repository count. Require validated need, a maintainer, distinct scope, a testable first milestone, and an explicit overlap review.
