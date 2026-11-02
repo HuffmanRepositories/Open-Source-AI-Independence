@@ -18,7 +18,7 @@ The latest observed full-history Gitleaks runs completed successfully across all
 
 ## CodeQL
 
-SHA-pinned CodeQL Python analysis is configured for eight repositories with Python validator code:
+SHA-pinned CodeQL Python analysis is configured for seven public repositories containing Python validators:
 
 - OAC Fixtures
 - OARMI
@@ -27,9 +27,10 @@ SHA-pinned CodeQL Python analysis is configured for eight repositories with Pyth
 - P12 Retry / Idempotency
 - P13 Delegation Scope
 - P14 Delegated Budget
-- Private HuffmanRepositories Blueprint
 
-The latest observed CodeQL runs for the seven public Python repositories completed successfully. The private Blueprint's first CodeQL run was still in progress at the time of this update. Successful analysis does not by itself assert zero alerts. **A successful upload is not the same as “zero alerts”; review the Security → Code scanning view for each repository.** The base OAC, mission hub, account-profile README, private Test Lab, and public Guide are primarily documentation/coordination rather than Python application code and are not included in the CodeQL Python matrix.
+The latest observed CodeQL runs for these seven public repositories completed successfully. Successful analysis does not by itself assert zero alerts. **A successful upload is not the same as “zero alerts”; review the Security → Code scanning view for each repository.**
+
+The private Blueprint contains Python test code, but its attempted CodeQL workflow could not upload results because GitHub code scanning is not enabled for that repository. I removed that workflow rather than leave a recurring failing check. Enabling CodeQL for the private repository remains an owner-side settings decision. The base OAC, mission hub, account-profile README, private Test Lab, and public Guide are primarily documentation/coordination rather than Python application code and are not included in the CodeQL Python matrix.
 
 ## Dependency update automation
 
@@ -47,7 +48,7 @@ The public rulesets endpoint returned no rulesets for the public repositories. C
 
 ## Recommendations
 
-1. Review CodeQL findings from GitHub Security → Code scanning for all eight Python repos.
+1. Review CodeQL findings from GitHub Security → Code scanning for all seven public Python repos; enable code scanning for the private Blueprint only if its plan/settings support it.
 2. Review GitHub native Dependabot alerts and secret scanning/push protection in repo Settings → Security.
 3. Require PR review and CI checks on each main branch after adding an independent maintainer.
 4. Keep full-history secret scans enabled; rotate any real credential immediately if a finding appears.
