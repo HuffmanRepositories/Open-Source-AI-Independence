@@ -1,0 +1,24 @@
+# Open Source AI Independence
+
+> Community initiative for independent, decentralized where appropriate, transparent, interoperable, reliable, and human-centered AI infrastructure.
+
+## Start here
+- [README](README.md)
+- [Manifesto](MANIFESTO.md)
+- [Call to action](CALL-TO-ACTION.md)
+- [Roadmap](ROADMAP.md)
+- [Contributing](CONTRIBUTING.md)
+- [Governance](GOVERNANCE.md)
+- [Account ecosystem](docs/account-ecosystem.md)
+- [Project map](docs/project-map.md)
+- [AI discovery](docs/ai-discovery.md)
+
+## Context
+This is an early mission and coordination repository, not a mature software product. Planned work is not implemented merely because it appears in docs. No zero-hallucination, absolute-security, or universal-decentralization guarantee is made.
+
+## Related accounts
+https://github.com/HuffmanRepositories
+https://github.com/HuffmanMainNode
+https://github.com/PCakes303
+https://github.com/Ryzean84
+https://github.com/roberthuffman
