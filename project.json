@@ -1,0 +1,13 @@
+{
+  "name": "Open Source AI Independence",
+  "slug": "open-source-ai-independence",
+  "repository": "https://github.com/HuffmanRepositories/Open-Source-AI-Independence",
+  "owner": "HuffmanRepositories",
+  "description": "An open call to build independent, decentralized, transparent, interoperable, reliable, and human-centered AI infrastructure.",
+  "status": "initial-public-foundation",
+  "license": "MIT",
+  "type": ["community", "coordination", "documentation", "open-source-initiative"],
+  "topics": ["open-source-ai", "ai-independence", "decentralization", "interoperability", "ai-reliability", "human-centered-ai", "provider-independence", "community"],
+  "related_accounts": ["https://github.com/HuffmanRepositories", "https://github.com/HuffmanMainNode", "https://github.com/PCakes303", "https://github.com/Ryzean84", "https://github.com/roberthuffman"],
+  "claims": {"production_ready": false, "software_release_exists": false, "zero_hallucination_guarantee": false, "absolute_security_guarantee": false}
+}
