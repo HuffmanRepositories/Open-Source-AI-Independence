@@ -11,6 +11,9 @@ This repository is the public starting point for the **HuffmanRepositories** ini
 
 [Manifesto](MANIFESTO.md) · [Public whitepapers](https://github.com/HuffmanRepositories/Huffman-Ecosystem-Guide/blob/main/WHITEPAPERS.md) · [Agent handshake](AGENT-HANDSHAKE.md) · [Join us](CALL-TO-ACTION.md) · [Roadmap](ROADMAP.md) · [Contribute](CONTRIBUTING.md) · [Security posture](docs/security-posture.md)
 
+
+> **Current status:** This is a mission, roadmap, and coordination hub for open AI infrastructure research—not a deployed AI runtime or certification program. Portfolio-wide validation and release status are tracked in the [Huffman Ecosystem Root](https://github.com/HuffmanRepositories/Huffman-Ecosystem-Root) and its [release-readiness review](https://github.com/HuffmanRepositories/Huffman-Ecosystem-Root/blob/main/RELEASE-READINESS-REVIEW.md).
+
 ## Why this exists
 AI is becoming infrastructure for research, software, security, education, creativity, and everyday decisions. Capability alone is not enough. People also need:
 - **Choice:** freedom to use, replace, combine, or self-host tools and providers.
