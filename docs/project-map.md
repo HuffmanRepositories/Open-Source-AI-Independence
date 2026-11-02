@@ -20,6 +20,16 @@ This map distinguishes repositories that exist from ideas that have not passed a
 
 | [HuffmanRepositories profile README](https://github.com/HuffmanRepositories/HuffmanRepositories) | Account profile / discovery | Account-level portfolio links and broader research identity | Not a technical implementation |
 
+
+## Portfolio automation and security baseline
+
+- **Gitleaks full-history scan:** configured in all 11 account repositories. It checks out all history, downloads Gitleaks CLI v8.30.1, verifies the release SHA-256, and runs a redacted scan over all reachable refs/commits. The first completed full-history pass reported no leaks.
+- **CodeQL Python analysis:** configured for the seven public repositories containing Python validators. Latest observed CodeQL workflows completed successfully and uploaded analysis results; review any alerts in each repository's GitHub Security tab.
+- **Dependabot:** weekly GitHub Actions dependency update checks are configured in all 11 repositories.
+- **Workflow supply-chain hygiene:** GitHub Actions are pinned to immutable commit SHAs and checkout uses `persist-credentials: false` with read-only repository permissions where applicable.
+
+**Security scope:** these checks cover secret patterns in reachable Git history and CodeQL-supported Python source. They do not replace runtime testing, dependency-alert review, branch-protection verification, or an independent security audit. GitHub-native Dependabot alert, push-protection, secret-scanning, and branch-protection settings still require owner-side verification. See [Security posture](security-posture.md).
+
 ## Deferred / proposed work
 
 | Workstream | Purpose | Gate before creating another repository |
