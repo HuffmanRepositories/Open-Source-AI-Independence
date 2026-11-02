@@ -73,3 +73,8 @@ See [roadmap](ROADMAP.md) and [changelog](CHANGELOG.md).
 Unless stated otherwise, original material is released under the [MIT License](LICENSE).
 
 **Our goal is not to own the future. Our goal is to make the future more accessible to everyone.**
+
+
+## Ecosystem directory
+
+The canonical public portfolio index, project router, shared glossary, and human/AI onboarding entry point is the [Huffman Ecosystem Root](https://github.com/HuffmanRepositories/Huffman-Ecosystem-Root). Start there to discover the smallest relevant project without ingesting the entire portfolio.
