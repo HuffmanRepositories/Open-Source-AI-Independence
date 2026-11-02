@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-11-02 — Action dependency refresh
+- Reviewed and merged 19 Dependabot PRs across the portfolio for `actions/checkout` v7.0.1 and `actions/setup-python` v7.1.0, verifying upstream tag SHAs and CI.
+- Latest main validation, full-history Gitleaks, and Python CodeQL runs passed on the repos where each workflow applies.
+
 ## 2026-11-02 — Security automation and portfolio upkeep
 - Added full-history Gitleaks CLI scanning to all 11 repositories, with SHA-256 verification, read-only permissions, redacted output, and weekly/manual/PR/push triggers.
 - Added SHA-pinned CodeQL Python analysis to OAC Fixtures and P10–P14/OARMI; latest observed analyses uploaded successfully.
