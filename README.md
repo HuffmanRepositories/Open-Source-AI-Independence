@@ -9,7 +9,7 @@
 
 This repository is the public starting point for the **HuffmanRepositories** initiative: a community-facing mission, roadmap, and coordination space for connecting open projects and helping people build what is missing.
 
-[Manifesto](MANIFESTO.md) · [Agent handshake](AGENT-HANDSHAKE.md) · [Join us](CALL-TO-ACTION.md) · [Roadmap](ROADMAP.md) · [Contribute](CONTRIBUTING.md) · [Security posture](docs/security-posture.md)
+[Manifesto](MANIFESTO.md) · [Public whitepapers](https://github.com/HuffmanRepositories/Huffman-Ecosystem-Guide/blob/main/WHITEPAPERS.md) · [Agent handshake](AGENT-HANDSHAKE.md) · [Join us](CALL-TO-ACTION.md) · [Roadmap](ROADMAP.md) · [Contribute](CONTRIBUTING.md) · [Security posture](docs/security-posture.md)
 
 ## Why this exists
 AI is becoming infrastructure for research, software, security, education, creativity, and everyday decisions. Capability alone is not enough. People also need:
